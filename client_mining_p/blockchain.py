@@ -181,7 +181,7 @@ def new_transaction():
     if not all(k in values for k in required):
         return 'Missing Values', 400
 
-    # Create a new Transaction
+    # Create a new Transactions
     index = blockchain.new_transaction(values['sender'],
                                        values['recipient'],
                                        values['amount'])
